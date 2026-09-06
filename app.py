@@ -56,7 +56,7 @@ def _sidebar() -> None:
         st.markdown("## 🎯 Interview OS")
         st.caption("Your AI interviewer")
         if not settings.llm_enabled:
-            st.warning("No ANTHROPIC_API_KEY set — interviews are disabled until .env is configured.", icon="⚠️")
+            st.warning("No GROQ_API_KEY set — interviews are disabled until Secrets/.env is configured.", icon="⚠️")
         st.divider()
         if st.button("🏠 Home", use_container_width=True):
             st.session_state.page = "landing"
